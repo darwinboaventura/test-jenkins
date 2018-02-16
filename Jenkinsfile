@@ -1,5 +1,7 @@
 pipeline {
-    agent { docker 'node:6.3' }
+    agent { 
+        docker 'cvcbrasil/nginx-singlepage:log' 
+    }
     stages {
         stage('build') {
             steps {
