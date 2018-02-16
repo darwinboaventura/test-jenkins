@@ -1,6 +1,8 @@
 pipeline {
     agent { 
-        docker 'cvcbrasil/nginx-singlepage:log' 
+        docker {
+            image: 'cvcbrasil/nginx-singlepage:log'
+        }
     }
     stages {
         stage('build') {
